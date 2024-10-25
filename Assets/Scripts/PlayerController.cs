@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        
         if (freeCamera != null)
         {
             freeCamera.Move();

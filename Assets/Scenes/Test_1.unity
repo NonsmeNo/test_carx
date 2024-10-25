@@ -5357,6 +5357,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freeCamera: {fileID: 965809335}
+  ui: {fileID: 0}
+  stoneSpawner: {fileID: 0}
 --- !u!4 &607384677
 Transform:
   m_ObjectHideFlags: 0
@@ -5722,26 +5724,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 630908148}
-  - component: {fileID: 630908147}
+  - component: {fileID: 630908149}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CloudController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &630908147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630908146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d877a5ae2574d79448cd863f2ab686ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &630908148
 Transform:
   m_ObjectHideFlags: 0
@@ -5757,6 +5747,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630908149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630908146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c985076ece1b4c8408d122ff364f92ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cloud: {fileID: 0}
+  _points: []
+  _speed: 10
 --- !u!1001 &633766008
 PrefabInstance:
   m_ObjectHideFlags: 0
